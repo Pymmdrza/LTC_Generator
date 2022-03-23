@@ -25,7 +25,9 @@ mmdrza = '''
 '''
 print(Fore.GREEN, mmdrza,Style.RESET_ALL)
 
-filename = 'RichLTC.txt'
+
+filename = input('*** INSERT FILE NAME (Example: Mmdrza.txt) >>> ')
+
 with open(filename) as f:
     add = f.read().split()
 add = set(add)
